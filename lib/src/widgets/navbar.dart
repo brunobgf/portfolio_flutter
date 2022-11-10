@@ -9,15 +9,15 @@ class NavBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
     return PreferredSize(
-      preferredSize: Size.fromHeight(150),
+      preferredSize: const Size.fromHeight(150),
       child: Container(
-        color: Colors.blueGrey,
+        color: const Color.fromARGB(255, 20, 22, 24),
         child: Padding(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           child: Row(
             children: [
-              Text(
-                'HOME',
+              const Text(
+                'PORTFOLIO',
                 style: TextStyle(
                   color: Colors.white,
                 ),
@@ -29,7 +29,7 @@ class NavBar extends StatelessWidget implements PreferredSizeWidget {
                     InkWell(
                       onHover: (val) {},
                       onTap: () {},
-                      child: Text(
+                      child: const Text(
                         'About me',
                         style: TextStyle(
                           color: Colors.white,
@@ -41,7 +41,7 @@ class NavBar extends StatelessWidget implements PreferredSizeWidget {
                     ),
                     InkWell(
                       onTap: () {},
-                      child: Text(
+                      child: const Text(
                         'Projects',
                         style: TextStyle(color: Colors.white),
                       ),
@@ -51,7 +51,7 @@ class NavBar extends StatelessWidget implements PreferredSizeWidget {
                     ),
                     InkWell(
                       onTap: () {},
-                      child: Text(
+                      child: const Text(
                         'Experience',
                         style: TextStyle(color: Colors.white),
                       ),
@@ -61,7 +61,7 @@ class NavBar extends StatelessWidget implements PreferredSizeWidget {
                     ),
                     InkWell(
                       onTap: () {},
-                      child: Text(
+                      child: const Text(
                         'Contact',
                         style: TextStyle(color: Colors.white),
                       ),
@@ -77,6 +77,5 @@ class NavBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  // TODO: implement preferredSize
-  Size get preferredSize => Size.fromHeight(150);
+  Size get preferredSize => const Size.fromHeight(150);
 }

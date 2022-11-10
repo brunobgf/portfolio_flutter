@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../widgets/aboutme_card.dart';
+import '../widgets/aboutme_web_card.dart';
 import '../widgets/navbar.dart';
 
 class HomePage extends StatefulWidget {
@@ -24,10 +23,10 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: NavBar(),
+      appBar: const NavBar(),
       body: SingleChildScrollView(
         child: Column(
-          children: [
+          children: const [
             AboutMeCard(),
             AboutMeCard(),
             AboutMeCard(),
