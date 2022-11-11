@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_flutter/src/widgets/footer.dart';
 import '../widgets/aboutme_web_card.dart';
 import '../widgets/navbar.dart';
+import '../widgets/projectscard.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key, required this.title});
@@ -12,14 +14,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,16 +22,11 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: const [
             AboutMeCard(),
-            AboutMeCard(),
-            AboutMeCard(),
+            ProjectsCard(),
+            Footer(),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }

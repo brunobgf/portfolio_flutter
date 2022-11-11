@@ -14,7 +14,7 @@ class FormatedText extends StatelessWidget {
       overflow: TextOverflow.ellipsis,
       text: TextSpan(
         style: const TextStyle(
-          fontSize: 15.0,
+          fontSize: 18.0,
           overflow: TextOverflow.ellipsis,
         ),
         text: textFormat,

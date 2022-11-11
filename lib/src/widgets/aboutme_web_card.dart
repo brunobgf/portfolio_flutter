@@ -11,8 +11,8 @@ class AboutMeCard extends StatelessWidget {
     return Center(
       child: Container(
         width: (screenSize.width < 600) ? 600 : 1100,
-        height: (screenSize.width < 800) ? 800 : 500,
-        padding: const EdgeInsets.all(75),
+        height: (screenSize.width < 800) ? 800 : 480,
+        padding: const EdgeInsets.all(65),
         child: Card(
           elevation: 50,
           shadowColor: Colors.black,
@@ -23,7 +23,7 @@ class AboutMeCard extends StatelessWidget {
               width: 1,
             ),
           ),
-          color: const Color.fromARGB(255, 227, 222, 237),
+          color: Color.fromARGB(255, 232, 230, 236),
           child: LayoutBuilder(
             builder: (context, constraints) {
               if (constraints.maxWidth < 600) {
@@ -89,7 +89,7 @@ class _AboutMeText extends StatelessWidget {
       ),
       subtitle: FormatedText(
         textFormat:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
+            'Welcome to my portfolio! I am a Software Engineering student at PUC-Minas and Digital Artist as a hobby. Currently working as Software Developer Intern and also learning about Flutter at Framework Digital! :) ',
       ),
     );
   }

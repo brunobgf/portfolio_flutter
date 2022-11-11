@@ -14,7 +14,7 @@ class App extends StatelessWidget {
         primarySwatch: Colors.blueGrey,
       ),
       debugShowCheckedModeBanner: false,
-      home: const HomePage(title: 'Flutter Demo Home Page'),
+      home: const HomePage(title: 'Portfolio'),
     );
   }
 }
